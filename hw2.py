@@ -19,8 +19,8 @@ print('************************************')
 print('Anxiety Attack dataset missing values')
 print(aad.missing_value_report())
 print('************************************')
-print('Anxiety Attack dataset show all distributions')
-aad.show_all_distributions()  # comment this if start script with text terminal
+print('Anxiety Attack dataset show selected distributions')
+aad.show_select_distributions('Age', 'Gender', 'Sleep Hours', 'Physical Activity (hrs/week)')  # comment this if start script with text terminal
 print('************************************')
 print('Anxiety Attack dataset pie distribution')
 aad.draw_pie_distribution('Occupation')   # comment this if start script with text terminal

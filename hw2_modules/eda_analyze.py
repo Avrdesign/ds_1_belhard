@@ -19,8 +19,20 @@ class EdaAnalyze:
         report = self.df.isnull().sum()
         return report[report > 0]
 
-    def show_all_distributions(self):
+    def show_all_distributions(self):    # Print all columns
         for column in self.df.select_dtypes(include="number").columns:
+            plt.figure(figsize=(5, 5))
+            sns.histplot(data=self.df, x=column, kde=True)
+            plt.title(f'Distribution of {column}')
+            plt.show()
+
+    def show_select_distributions(self, *col_names):   # Print only select columns
+        list_col_names = []
+        for n in col_names:
+            list_col_names.append(n)
+        for column in self.df.select_dtypes(include="number").columns:
+            if column not in list_col_names:
+                continue
             plt.figure(figsize=(5, 5))
             sns.histplot(data=self.df, x=column, kde=True)
             plt.title(f'Distribution of {column}')
