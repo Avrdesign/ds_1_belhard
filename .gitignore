@@ -11,14 +11,19 @@ data_lesson2_housing.csv
 /.venv/
 /original_data
 
-# Игнорируем все файлы с расширением ipynb в директории /
+# Игнорируем файлы в директории /
 /*.ipynb
+/img.png
+/git_token.txt
+/kaggle.json
 
 # Но не игнорируем
 !hw2_view.ipynb
+!hw3_view.ipynb
 
 
 # При этом не игнорируются такие же файлы внутри любого вложенного каталога в db
 # Например, /db/something/lala.sqlite3
 # Игнорировать все .txt файлы в каталоге doc/ на всех уровнях вложенности
 # doc/**/*.txt
+
