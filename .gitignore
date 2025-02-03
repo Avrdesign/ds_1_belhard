@@ -20,7 +20,7 @@ data_lesson2_housing.csv
 # Но не игнорируем
 !hw2_view.ipynb
 !hw3_view.ipynb
-
+!hw4_view.ipynb
 
 # При этом не игнорируются такие же файлы внутри любого вложенного каталога в db
 # Например, /db/something/lala.sqlite3
