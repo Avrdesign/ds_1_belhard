@@ -19,7 +19,7 @@ https://www.kaggle.com/datasets/micheldc55/anual-salary-reports-survey/data
 - Orthogonal Matching Pursuit
 - ElasticNet
 
-Наиболее эффективными являются Extra Trees Regressor, DecisionTreeRegressor.
+Наиболее эффективными являются LGBMRegressor, Extra Trees Regressor, DecisionTreeRegressor.
 
 LGBM с подбором параметров показал чуть лучшие результаты, но подббор занимает много времени.
 
